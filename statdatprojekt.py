@@ -34,6 +34,7 @@ def generateVariables(trust,income, Threshold):
     nk = len(income.loc[income >= 8])
     return [xj,nj,xk,nk]
 
+
 def A3_b(xj,nj,xk,nk):
     Betaj = BetaDistribution(xj,nj-xj,10000).generateBetaDistribution()
     Betak = BetaDistribution(xk,nk-xk,10000).generateBetaDistribution()
